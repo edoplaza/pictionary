@@ -4,6 +4,7 @@ A simple local multiplayer **Pictionary** game built with:
 
 - ✨ React, TypeScript, and Tailwind CSS (frontend)
 - ⚙️ FastAPI (backend)
+
 ---
 
 ## 📁 Project Structure
