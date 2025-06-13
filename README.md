@@ -4,56 +4,66 @@ A simple local multiplayer **Pictionary** game built with:
 
 - ✨ React, TypeScript, and Tailwind CSS (frontend)
 - ⚙️ FastAPI (backend)
+---
 
-> ⚠️ This project is submitted as a ZIP file, not a Git repository. Please extract it before proceeding.
-
-📁 Project Structure
+## 📁 Project Structure
 
 pictionary/
-├── src/   # React + Vite
-└── backend/    # FastAPI
+├── src/         # React + Vite frontend
+├── backend/     # FastAPI backend
+└── README.md
 
-🚀 Getting Started
+---
 
-🔧 Requirements
+## 🚀 Getting Started
+
+### 🔧 Requirements
 
 - Node.js ≥ 18
 - Python ≥ 3.9
-- pip and venv
+- `pip` and `venv`
 
-🖥️ Frontend Setup (React + Vite)
+---
 
-1. Navigate to the root
+### 🖥️ Frontend Setup (React + Vite)
 
-2. Install dependencies:
-   npm install
+# 1. Navigate to the project root
+cd pictionary
 
-3. Start the development server:
-   npm run dev
+# 2. Install dependencies
+npm install
 
-4. Visit the app at: http://localhost:5173
+# 3. Start the development server
+npm run dev
 
-🔙 Backend Setup (FastAPI)
+> App will be available at: http://localhost:5173
 
-1. Navigate to the backend folder:
-   cd backend
+---
 
-2. Create and activate a virtual environment:
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
+### 🔙 Backend Setup (FastAPI)
 
-3. Install dependencies:
-   pip install -r requirements.txt
+# 1. Navigate to the backend folder
+cd backend
 
-4. (Optional) Create your .env file:
-   cp .env.example .env
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
 
-5. Start the API server:
-   uvicorn main:app --reload --port 8000
+# 3. Install dependencies
+pip install -r requirements.txt
 
-6. API will be available at: http://localhost:8000
+# 4. (Optional) Copy the .env template
+cp .env.example .env
 
-📘 API Reference
+# 5. Run the API server
+uvicorn main:app --reload --port 8000
+
+> API will be available at: http://localhost:8000
+
+---
+
+## 📘 API Reference
 
 | Method | Endpoint     | Description            |
 |--------|--------------|------------------------|
@@ -61,41 +71,49 @@ pictionary/
 | POST   | /guess       | Submit a guess         |
 | POST   | /new-word    | Fetch a new word       |
 
+---
 
-⚙️ Code Quality Tools
+## 🧼 Code Quality Tools
 
-
-🧼 Format with Prettier
+### Format with Prettier
 npm run format
 npm run format:check
 
-🧹 Lint with ESLint
+### Lint with ESLint
 npm run lint
 npm run lint:fix
 
-🧠 Type Checking
+### Type Checking (TypeScript)
 npm run type-check
 npm run type-check:watch
 
-✅ All-in-One Quality Check
+### All-in-One Quality Check
 npm run check
 
-🌱 Example .env.example
+---
+
+## 🌱 Environment Variables
+
+### .env.example
 
 # Frontend
 VITE_API_URL=http://localhost:8000
 
-# Backend
+# Backend (unused for now)
 SECRET_KEY=dev-placeholder-key
 
-> No secrets are currently required. This is prepared for future use.
+> No secrets are required to run the app locally. This is included for potential future use.
 
-🧭 Next Steps (Ideas for Extension)
+---
+
+## 🧭 Next Steps (Ideas for Extension)
 
 - ✅ User authentication
 - 🔁 Real-time multiplayer using WebSockets
 - ☁️ Deployment via Vercel (frontend) & Railway or Render (backend)
 
-📄 License
+---
 
-This project is licensed under the MIT License. See LICENSE for more info.
+## 📄 License
+
+This project is licensed under the MIT License. See LICENSE for details.
