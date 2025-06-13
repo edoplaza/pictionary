@@ -21,7 +21,7 @@ pictionary/
 ### 🔧 Requirements
 
 - Node.js ≥ 18
-- Python ≥ 3.9
+Python 3.11 (recommended)
 - `pip` and `venv`
 
 ---
@@ -50,6 +50,9 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate        # macOS/Linux
 venv\Scripts\activate           # Windows
+
+💡 Note: Python 3.11 is recommended. Python 3.13 may cause issues installing pydantic-core.
+If you see a Rust-related error during pip install, please downgrade to Python 3.11.
 
 # 3. Install dependencies
 pip install -r requirements.txt
