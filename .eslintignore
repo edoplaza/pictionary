@@ -1,0 +1,24 @@
+# Build output
+dist
+build
+
+# Dependencies
+node_modules
+
+# Cache
+.cache
+.temp
+
+# Coverage
+coverage
+
+# Environment
+.env
+.env.*
+
+# Generated files
+*.d.ts
+*.generated.*
+
+# Backend
+backend/ 
